@@ -6,6 +6,15 @@ public class Gate extends BaseModel{
     private Operator operator;
     private GateType gateType;
     private GateStatus gateStatus;
+    private ParkingLot parkingLot;
+
+    public ParkingLot getParkingLot() {
+        return parkingLot;
+    }
+
+    public void setParkingLot(ParkingLot parkingLot) {
+        this.parkingLot = parkingLot;
+    }
 
     public Gate() {
     }

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ParkingFloor extends BaseModel{
     private String floorNumber;
-    private List<ParkingSlot> parkingLots;
+    private List<ParkingSlot> parkingSlots;
     private ParkingFloorStatus parkingFloorStatus;
     private List<SupportedVehicleType> vehicleTypes;
 
@@ -13,7 +13,7 @@ public class ParkingFloor extends BaseModel{
 
     public ParkingFloor(String floorNumber, List<ParkingSlot> parkingLots, ParkingFloorStatus parkingFloorStatus, List<SupportedVehicleType> vehicleTypes) {
         this.floorNumber = floorNumber;
-        this.parkingLots = parkingLots;
+        this.parkingSlots = parkingLots;
         this.parkingFloorStatus = parkingFloorStatus;
         this.vehicleTypes = vehicleTypes;
     }
@@ -26,12 +26,12 @@ public class ParkingFloor extends BaseModel{
         this.floorNumber = floorNumber;
     }
 
-    public List<ParkingSlot> getParkingLots() {
-        return parkingLots;
+    public List<ParkingSlot> getParkingSlots() {
+        return parkingSlots;
     }
 
-    public void setParkingLots(List<ParkingSlot> parkingLots) {
-        this.parkingLots = parkingLots;
+    public void setParkingSlots(List<ParkingSlot> parkingSlots) {
+        this.parkingSlots = parkingSlots;
     }
 
     public ParkingFloorStatus getParkingFloorStatus() {

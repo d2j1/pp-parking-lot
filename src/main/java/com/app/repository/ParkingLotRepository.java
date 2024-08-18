@@ -25,4 +25,12 @@ public class ParkingLotRepository {
         return null;
     }
 
+    public ParkingLot findParkingLotById(int id){
+        if(parkingLots.containsKey(id)){
+            return parkingLots.get(id);
+
+        }
+        return null;
+    }
+
 }

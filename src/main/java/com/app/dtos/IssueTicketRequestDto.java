@@ -7,6 +7,8 @@ public class IssueTicketRequestDto {
     private  String vehicleNo;
     private String  ownerName;
     private VehicleType vehicleType;
+    private int parkingLotId;
+
 
     public String getOwnerName() {
         return ownerName;
